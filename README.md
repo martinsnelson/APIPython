@@ -14,6 +14,28 @@ python app.py
 
 pip freeze > requirements.txt
 
+################################################
+Path: PythonAPI/api
+como rodar esse projeto app
+no command    bash
+export FLASK_APP=app
+export FLASK_ENV=Development
+export FLASK_DEBUG=True
+flask run
+
+
+flask db
+flask db init
+flask db migrate
+flask db upgrade
+flask routes
+
+pipenv install flask-sqlalchemy
+pipenv install flask-migrate
+pipenv install flask-marshmallow
+pipenv install marshmallow-sqlalchemy
+pipenv install -d requests ipdb
+################################################
 
 flask==1.0.2
 flask-cors
