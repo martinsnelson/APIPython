@@ -10,6 +10,10 @@ cors = CORS(app, resources={r"/*":{"origins": "*"}})
 def index():
     return "<h1>Hello World!<h1>"
 
+@app.route("/heroku", methods=['GET'])
+def heroku():
+    return "<h2>Deploy Heroku</h2>"
+
 def main():
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
